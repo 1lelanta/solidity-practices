@@ -17,6 +17,64 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "propasals",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "name",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "voteCount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "voters",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "weight",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "voted",
+						"type": "bool"
+					},
+					{
+						"internalType": "address",
+						"name": "delegate",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "vote",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -47,11 +105,11 @@
 	},
 	"sources": {
 		"Ballot.sol": {
-			"keccak256": "0x1bf2da27668b365e5c712d7eca84cfc52fd2c2da2283e31a3d6d158bdc1bb39b",
+			"keccak256": "0xeb2b003853dd698fe1556f76450e072680ba5e46655c53c9685167f8e7bf5359",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e361fbbdac9c0c46a7aae4e7f49f3001aa50074fa2247bb94cd650daf5e2ebd2",
-				"dweb:/ipfs/QmVaLE7w7pDkA3rrS2f5vwMMDuRmLH8aHXfLSjZvUKC5S4"
+				"bzz-raw://5a5bb5efac56b739301cc251de4d5df9c56f69379e7373cb4f8125b1946ab506",
+				"dweb:/ipfs/QmRK7HhYeLSPPVZeNuuH6ANkU9accyExtGMviiDT1XsbLS"
 			]
 		}
 	},
