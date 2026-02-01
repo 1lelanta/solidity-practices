@@ -16,4 +16,6 @@ contract Ballot{
         bytes32 name;  // small proposal name 
         uint voteCount; // vote counter 
     }
+    // gives right to vote 
+    address public  chairperson ;// address where contract is deployed
 }

@@ -4,7 +4,21 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [],
+				"name": "chairperson",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +47,11 @@
 	},
 	"sources": {
 		"Ballot.sol": {
-			"keccak256": "0x53c6b3c4a8492e7648e593306581bb921ecb6c4056d5a57b3620c90cfe478056",
+			"keccak256": "0x1bf2da27668b365e5c712d7eca84cfc52fd2c2da2283e31a3d6d158bdc1bb39b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8bca8ad04b572302293bb38400d62a971285d1aeaecbc40cd4b0361f53fa5f85",
-				"dweb:/ipfs/QmYbUgpe7A46z52M8e6hFgMZzKSHJhuykEkfgsTe4HcS7j"
+				"bzz-raw://e361fbbdac9c0c46a7aae4e7f49f3001aa50074fa2247bb94cd650daf5e2ebd2",
+				"dweb:/ipfs/QmVaLE7w7pDkA3rrS2f5vwMMDuRmLH8aHXfLSjZvUKC5S4"
 			]
 		}
 	},
