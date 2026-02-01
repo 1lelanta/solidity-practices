@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Ballot.sol": "Ballot"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Ballot.sol": {
+			"keccak256": "0x3d22f1a424ff8f17ea2b75ae047d57e49b52ad3c50922afce5f3ee2f5420c161",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://99a57b0d113728f47a3b390ec3c1313037346c97fa4ad1214d475ab7932f6bc5",
+				"dweb:/ipfs/QmVq2JqUsPxxFKoRQH7dBF5UaoS1qzMcH83xG2ZCDD484U"
+			]
+		}
+	},
+	"version": 1
+}
