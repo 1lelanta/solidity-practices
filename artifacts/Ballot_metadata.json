@@ -6,6 +6,17 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "bytes32[]",
+						"name": "proposaNames",
+						"type": "bytes32[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"inputs": [],
 				"name": "chairperson",
 				"outputs": [
@@ -105,11 +116,11 @@
 	},
 	"sources": {
 		"Ballot.sol": {
-			"keccak256": "0xeb2b003853dd698fe1556f76450e072680ba5e46655c53c9685167f8e7bf5359",
+			"keccak256": "0xd5d2ee2caca0b3e9b6fd9117557d2bbea7ee2da0bb2d8d03bbe2085a1ac1e267",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5a5bb5efac56b739301cc251de4d5df9c56f69379e7373cb4f8125b1946ab506",
-				"dweb:/ipfs/QmRK7HhYeLSPPVZeNuuH6ANkU9accyExtGMviiDT1XsbLS"
+				"bzz-raw://fbc3c580527a1f3aca7c4f8d8ef053836b33b6ec62663e788ab68c1800acc1ef",
+				"dweb:/ipfs/QmevS3bJMVFVHvVRRNfToFLscEES1y1pACKR7RgxhvB4aD"
 			]
 		}
 	},

@@ -23,5 +23,16 @@ contract Ballot{
     mapping (address=> Voter) public voters; // creates data base key ethereum address value voters
 
     //create an array of proposal to store each propasal on storage
+    // public creates getter function for individual proposals 
     Proposal [] public  propasals; 
+
+    //constructor runs once upon deployment initializes proposals
+    constructor(bytes32[] memory proposaNames){
+        //set chair deployer
+        chairperson = msg.sender;
+
+        // give chairperson voting power 
+        // chairperson can vote immediately other should wait for approval
+        voters[chairperson].weight = 1;
+    }
 }
