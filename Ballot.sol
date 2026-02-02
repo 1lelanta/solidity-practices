@@ -89,6 +89,18 @@ contract Ballot{
         sender.voted = true;
         sender.vote = proposal;
         proposals[proposal].voteCount += sender.weight;
-        
     }
-}
+    //Winning proposal
+    function winningProposal() public view returns(uint winingProposal_){
+        for (uint p = 0; p < proposals.length; p++) {
+            if (proposals[p].voteCount > winningVoteCount) {
+            winningVoteCount = proposals[p].voteCount;
+            winningProposal_ = p;
+        }
+        }
+        function winnerName() external view returns (bytes32 winnerName_){
+            winnerName_ = proposals[winningProposal()].name;
+
+        }
+
+        }
