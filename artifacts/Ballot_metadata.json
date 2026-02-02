@@ -82,6 +82,19 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "proposal",
+						"type": "uint256"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "address",
 						"name": "",
 						"type": "address"
@@ -142,11 +155,11 @@
 	},
 	"sources": {
 		"Ballot.sol": {
-			"keccak256": "0xc1df233ef7d791ee76494369d2b2aea240f9c03966a2bd85343aa19306c35112",
+			"keccak256": "0xbdd737b31b1fbfb2acffe2c706b8af884da2bb6e8baf234dec30d6500d6d9682",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0c7f2261b9c0cc8804af950bdeb398fc7fd29f5c055a73c0fc4a1296404abf08",
-				"dweb:/ipfs/Qmf53PvAZTVnXuaPRAA75gVtVcM9VD83M1b6iTLh2qgmU6"
+				"bzz-raw://91fce2513c58fcdf27b9ba235dd68c4d0f3f8c4e9897784655aae853a10d5bf0",
+				"dweb:/ipfs/QmZwmoAhK961sRTRyU8hPA7wT6Cv7QuoTHNcqcfn18C5S6"
 			]
 		}
 	},
