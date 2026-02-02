@@ -24,10 +24,10 @@ contract Ballot{
 
     //create an array of proposal to store each propasal on storage
     // public creates getter function for individual proposals 
-    Proposal [] public  propasals; 
+    Proposal [] public  proposals; 
 
     //constructor runs once upon deployment initializes proposals
-    constructor(bytes32[] memory proposaNames){
+    constructor(bytes32[] memory proposalNames){
         //set chair deployer
         chairperson = msg.sender;
 
@@ -35,12 +35,27 @@ contract Ballot{
         // chairperson can vote immediately other should wait for approval
         voters[chairperson].weight = 1;
         // create the proposasl 
-        for(uint i=0; i<proposaNames.length;i++){
-            propasals.push(Proposal({
-                name:proposaNames[i],
+        for(uint i=0; i<proposalNames.length;i++){
+            proposals.push(Proposal({
+                name:proposalNames[i],
                 voteCount:0
             }));
 
         }
+    }
+    // allow chairperson to authorize voters
+    function giveRightToVote(address voter) external{
+        require(msg.sender == chairperson, "Only chairperson can give right to vote. "); // prevents unothorized users from granting voting rights
+        require(!voters[voter].voted, "The voter already voted. ");
+        require(voters[voter].weight ==0);// voting rights given only once
+        voters[voter].weight = 1; //gives the voter exactly one vote
+    }
+    // Delegate vote
+    function delegate(address to ) external{
+        // allow voter to transfer their voting power
+        Voter storage sender = voters[msg.sender];// ? creates reference
+        require(sender.weight !=0, "you have no right to vote");
+        require(!sender.voted, "you have already voted");
+        require(to!=msg.sender, "Self-delegation is disallowed");
     }
 }
