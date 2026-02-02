@@ -125,6 +125,32 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "winnerName",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "winnerName_",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "winningProposal",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "winningProposal_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -155,11 +181,11 @@
 	},
 	"sources": {
 		"Ballot.sol": {
-			"keccak256": "0xbdd737b31b1fbfb2acffe2c706b8af884da2bb6e8baf234dec30d6500d6d9682",
+			"keccak256": "0xed8e0fc0a9c03242449ddfcd4b1a56b8531c6a30ba21e344d87959b61b284279",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://91fce2513c58fcdf27b9ba235dd68c4d0f3f8c4e9897784655aae853a10d5bf0",
-				"dweb:/ipfs/QmZwmoAhK961sRTRyU8hPA7wT6Cv7QuoTHNcqcfn18C5S6"
+				"bzz-raw://cebbc25dba83225301fdb3d1d88da54adab3154f422cfacf9d8fe588d359b26c",
+				"dweb:/ipfs/QmUgEz6284txwCE179tKsjeb1LBjWbPB1UAaUfy69asJg7"
 			]
 		}
 	},
