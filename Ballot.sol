@@ -34,5 +34,13 @@ contract Ballot{
         // give chairperson voting power 
         // chairperson can vote immediately other should wait for approval
         voters[chairperson].weight = 1;
+        // create the proposasl 
+        for(uint i=0; i<proposaNames.length;i++){
+            propasals.push(Proposal({
+                name:proposaNames[i],
+                voteCount:0
+            }));
+
+        }
     }
 }

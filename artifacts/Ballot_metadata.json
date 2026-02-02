@@ -116,11 +116,11 @@
 	},
 	"sources": {
 		"Ballot.sol": {
-			"keccak256": "0xd5d2ee2caca0b3e9b6fd9117557d2bbea7ee2da0bb2d8d03bbe2085a1ac1e267",
+			"keccak256": "0x3bbddc3d857d6929d334c069d80ccfbda3f77ea1c6090e1421749da7044916e3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fbc3c580527a1f3aca7c4f8d8ef053836b33b6ec62663e788ab68c1800acc1ef",
-				"dweb:/ipfs/QmevS3bJMVFVHvVRRNfToFLscEES1y1pACKR7RgxhvB4aD"
+				"bzz-raw://4222343789ba9946eee4ff4aa3bf7504cb4488d9744f9986a9a715b1e8f355b6",
+				"dweb:/ipfs/Qma5dtDC3733o3hW14J6qpTVRy17WTk2XNLzDyWuAJbh63"
 			]
 		}
 	},
