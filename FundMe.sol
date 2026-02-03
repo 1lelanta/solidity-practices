@@ -15,8 +15,6 @@ contract FundMe{
 
     function fund() public payable {
         require(msg.value >=minimumUsd, "didn't send enough");
-    
-
     }
         function getPrice() public view returns(uint256) {
             // address  0x694AA1769357215DE4FAC081bf1f309aDC325306
@@ -25,8 +23,14 @@ contract FundMe{
              (,int256 price,,,)=  priceFeed.latestRoundData();
              return uint256(price*1e10);
         }
-        function getConversionRate() public view returns(uint256){
+
+        function getConversionRate(uint256 ethAmount) public view returns(uint256){
+            uint256 ethPrice = getPrice();
+
+            uint256 ethAmountInUsd = (ethPrice *ethAmount)/1e18;
+
+        }
+        function getVersion() public view returns(uint256){
             return AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306).version();
         }
-
 }
