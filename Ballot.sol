@@ -21,7 +21,7 @@ contract Ballot {
     address public chairperson;
 
     // map every address to exactly one voter record
-    mapping(address => Voter) public voters;
+    mapping(address => Voter) public voters;  // voters address key 
 
     // array of proposals stored in contract storage
     Proposal[] public proposals;
