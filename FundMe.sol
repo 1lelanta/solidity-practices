@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
-import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol";
+import {PriceConvertor} from "./PriceConvertor.sol";
 
 // get funds from the user 
 // withdraw funds 
@@ -9,17 +9,20 @@ import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interf
 
 
 contract FundMe{
-    
 
     uint256 public  minimumUsd = 5e18;
+    address [] public founders;
+    mapping(address founder =>uint amountFounded) public addressToAmoundFounded;
 
     function fund() public payable {
         require( getConversionRate(msg.value) >=minimumUsd, "didn't send enough");
+        founders.push(msg.sender);
+        addressToAmoundFounded[msg.sender] = addressToAmoundFounded[msg.sender] + msg.value;
     }
         function getPrice() public view returns(uint256) {
             // address  0x694AA1769357215DE4FAC081bf1f309aDC325306
             //ABI= Application Binary Interface. that tells outside world how to contact with that contract it is like a json 
-            AggregatorV3Interface priceFeed = AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306);
+            
              (,int256 price,,,)=  priceFeed.latestRoundData();
              return uint256(price*1e10);
         }
