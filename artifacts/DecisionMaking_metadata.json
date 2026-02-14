@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "validateBag",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contracts/decisionMaking.sol": "DecisionMaking"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contracts/decisionMaking.sol": {
+			"keccak256": "0x0a3a8f9f49cfaa279876501b73d904b685450a6f44796686f2ef5befdbd4499d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://652afa3201dda1e255121a18ea708a68ab22ed044619a3737e3cd497386fa2e4",
+				"dweb:/ipfs/Qmdtbsw8pqQsrJzJFoBSi3yxznNo4ZbGU84DYYy8sfEgQm"
+			]
+		}
+	},
+	"version": 1
+}

@@ -6,7 +6,7 @@ contract learnFunctions{
 
     }
 
-    function addNumber(uint a, uint b) public view returns (uint){
+    function addNumber(uint a, uint b) public returns (uint){
         return a + b;
 
     }
