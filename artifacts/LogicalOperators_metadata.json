@@ -7,7 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "calculator",
+				"name": "logic",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -32,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Contracts/arithmeticOperator.sol": "Operators"
+			"Contracts/logicalOperators.sol": "LogicalOperators"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -46,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Contracts/arithmeticOperator.sol": {
-			"keccak256": "0xab5703cacfd5098ec8617bd2af79b41af10d60ad0fe088815a9e104e0e3d81f6",
+		"Contracts/logicalOperators.sol": {
+			"keccak256": "0xd225883fee89aff3c28f80ff060d157edd2f58158872f57725c927b560ed20d9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://63014c78892482b32854667ee0434b63534954027b35f5be07c0df3e79858774",
-				"dweb:/ipfs/QmWRsy8KnUc7QxUzsz1LQjaTpkffiaooQyjCXUv39Mwnrh"
+				"bzz-raw://254ce79d64f555ed135f2f1ca311d2c47d94ef5ac0b40794d0a69a53bcede8af",
+				"dweb:/ipfs/QmTFHVKzfNfsMSHxAWWyD6qWCmFHE7ZsmHo6qNwpwNXLP9"
 			]
 		}
 	},

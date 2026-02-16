@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 contract Operators{
-    function calculator() public  returns(uint){
+    function calculator() public view returns(uint){
         uint a = 5;
         uint b = 50;
 
