@@ -5,14 +5,14 @@ contract loopContract{
 
     uint[] public numbers = [1,2,3,4,5,6,7,8,9];
 
-    function checkMultiple(uint _number) public view  returns(bool){
+    function checkMultiple(uint _number) public view  {
 
         for(uint i = 0; i< numbers.length; i++){
             checkMultiples(numbers[i], _number);
 
     }
 
-
+    }
     function checkMultiples(uint _num, uint _nums) public view returns(bool){
 
         if(_num % _nums==0){
