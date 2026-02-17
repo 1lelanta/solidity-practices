@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_nums",
+						"type": "uint256"
+					}
+				],
+				"name": "checkMultiples",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contracts/loop.sol": "loopContract"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contracts/loop.sol": {
+			"keccak256": "0x096e5d25004fb40181fa3eaeb42bc27a0431cbee4e18b2d1dfbc6291b72d6c08",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://06dd9718f357ae293f38583cc6916c4f16b8201e4f125b70ccf13af0ba5cba60",
+				"dweb:/ipfs/QmVCxa2n3WXbEASQT8yTAbyMcMTbsx7CoH3PZ25QwshCm3"
+			]
+		}
+	},
+	"version": 1
+}
