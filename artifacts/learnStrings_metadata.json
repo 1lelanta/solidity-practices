@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contracts/learnStrings.sol": "learnStrings"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contracts/learnStrings.sol": {
+			"keccak256": "0x757a15009f96116cc3e9ac98c45ea31bd86cbab07d1bf9ae253c5bbd6226376c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b1d0267bd650411922bce66a1908bf03b0f50d7c4714c5f92a4e7c7760110b71",
+				"dweb:/ipfs/Qmb8VKrw344WiozUweAa7v22p94HF7G7Cc4SsErMR4T3hm"
+			]
+		}
+	},
+	"version": 1
+}
