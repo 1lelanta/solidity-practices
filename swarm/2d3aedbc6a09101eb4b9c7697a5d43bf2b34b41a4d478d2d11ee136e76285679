@@ -7,11 +7,6 @@ contract learnStrings {
 
  function sayHello()  public  view returns(string memory){
     // momory is like ram it wiped out after function execution is finished 
-    return greeting;
 
- }
-
- function changeGreeting(string memory _change) public {
-    greeting = _change;
  }
 }

@@ -6,19 +6,6 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_change",
-						"type": "string"
-					}
-				],
-				"name": "changeGreeting",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "sayHello",
 				"outputs": [
@@ -60,11 +47,11 @@
 	},
 	"sources": {
 		"Contracts/learnStrings.sol": {
-			"keccak256": "0x0bf7d58f7a50ebe189447c39aef672e2e9ae35533054bd2fda5d194eefc9c704",
+			"keccak256": "0x13d9ac53d98147dc8afd6237a42fbc42fb6ade8874fb368db8c43c730f51c853",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c4965a652798eeb7b0228f793b4e9ac352919feaf517c86b2d6635d3c4637ee0",
-				"dweb:/ipfs/QmTtehsn5nLALS3Qrc5exVP8FR1NF6NGr7sLxeM3zEvjfM"
+				"bzz-raw://2d3aedbc6a09101eb4b9c7697a5d43bf2b34b41a4d478d2d11ee136e76285679",
+				"dweb:/ipfs/QmcvFQmVzPq9wrAsgDpfQoxaK7tzBxBiEKz6CiuXW6TQpv"
 			]
 		}
 	},
