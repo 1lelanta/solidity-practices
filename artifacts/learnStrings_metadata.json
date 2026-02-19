@@ -20,6 +20,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "getChar",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "sayHello",
 				"outputs": [
 					{
@@ -60,11 +73,11 @@
 	},
 	"sources": {
 		"Contracts/learnStrings.sol": {
-			"keccak256": "0x0bf7d58f7a50ebe189447c39aef672e2e9ae35533054bd2fda5d194eefc9c704",
+			"keccak256": "0xcf0d20d323686ffe13d24dc14de17e6af07ff8a1b0f9fc63635f588639a0ec4d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c4965a652798eeb7b0228f793b4e9ac352919feaf517c86b2d6635d3c4637ee0",
-				"dweb:/ipfs/QmTtehsn5nLALS3Qrc5exVP8FR1NF6NGr7sLxeM3zEvjfM"
+				"bzz-raw://7243342f9586f4caea951de2ac4005e7183c169897af45b4ba41ea7b6a7745fd",
+				"dweb:/ipfs/QmYXzDpEoRs8cEcZTUPrJAHyvSVhVQfasjjtu8vH5umnmX"
 			]
 		}
 	},

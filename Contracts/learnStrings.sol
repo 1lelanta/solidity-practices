@@ -14,4 +14,12 @@ contract learnStrings {
  function changeGreeting(string memory _change) public {
     greeting = _change;
  }
+
+ function getChar() public view returns(uint){
+    // getting length of character in solidity is to expensive 
+    // it is impossible to get length of string as other languages
+    // but we can do it by parsing string or casting to the bytes
+    bytes memory stringTobytes = bytes(greeting);
+    return stringTobytes.length;
+ }
 }
