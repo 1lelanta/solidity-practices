@@ -7,14 +7,14 @@ contract FundMe {
 
     uint256 public minimumUsd = 5e18;
 
-    address[] public founders;
+    address[] public funders;
     mapping(address => uint256) public addressToAmountFunded;
 
     function fund() public payable {
         require(getConversionRate(msg.value) >= minimumUsd, "Didn't send enough");
 
         if(addressToAmountFunded[msg.sender] == 0){
-            founders.push(msg.sender);
+            funders.push(msg.sender);
         }
 
         addressToAmountFunded[msg.sender] += msg.value;
@@ -35,5 +35,12 @@ contract FundMe {
     {
         uint256 ethPrice = getPrice();
         return (ethPrice * ethAmount) / 1e18;
+    }
+
+    function withdraw() public {
+        for(uint256 funderIndex=0; funderIndex<funders.length; funderIndex++){
+            address funder = funders[funderIndex];
+            addressToAmountFunded[funder] = 0;
+        }
     }
 }
