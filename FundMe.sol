@@ -1,40 +1,39 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.18;
-import {PriceConvertor} from "./PriceConvertor.sol";
 
-// get funds from the user 
-// withdraw funds 
-// set minimum funding value in USD
+import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
+contract FundMe {
 
+    uint256 public minimumUsd = 5e18;
 
-contract FundMe{
-
-    uint256 public  minimumUsd = 5e18;
-    address [] public founders;
-    mapping(address founder =>uint amountFounded) public addressToAmoundFounded;
+    address[] public founders;
+    mapping(address => uint256) public addressToAmountFunded;
 
     function fund() public payable {
-        require( getConversionRate(msg.value) >=minimumUsd, "didn't send enough");
-        founders.push(msg.sender);
-        addressToAmoundFounded[msg.sender] = addressToAmoundFounded[msg.sender] + msg.value;
+        require(getConversionRate(msg.value) >= minimumUsd, "Didn't send enough");
+
+        if(addressToAmountFunded[msg.sender] == 0){
+            founders.push(msg.sender);
+        }
+
+        addressToAmountFunded[msg.sender] += msg.value;
     }
-        function getPrice() public view returns(uint256) {
-            // address  0x694AA1769357215DE4FAC081bf1f309aDC325306
-            //ABI= Application Binary Interface. that tells outside world how to contact with that contract it is like a json 
-            
-             (,int256 price,,,)=  priceFeed.latestRoundData();
-             return uint256(price*1e10);
-        }
 
-        function getConversionRate(uint256 ethAmount) public view returns(uint256){
-            uint256 ethPrice = getPrice();
+    function getPrice() public view returns (uint256) {
+        AggregatorV3Interface priceFeed =
+            AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306);
 
-            uint256 ethAmountInUsd = (ethPrice *ethAmount)/1e18;
-            return ethAmountInUsd;
+        (, int256 price,,,) = priceFeed.latestRoundData();
+        return uint256(price * 1e10);
+    }
 
-        }
-        function getVersion() public view returns(uint256){
-            return AggregatorV3Interface(0x694AA1769357215DE4FAC081bf1f309aDC325306).version();
-        }
+    function getConversionRate(uint256 ethAmount)
+        public
+        view
+        returns(uint256)
+    {
+        uint256 ethPrice = getPrice();
+        return (ethPrice * ethAmount) / 1e18;
+    }
 }
