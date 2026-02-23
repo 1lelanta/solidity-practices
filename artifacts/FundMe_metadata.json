@@ -25,6 +25,13 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "fund",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -32,7 +39,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "founders",
+				"name": "funders",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -41,13 +48,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "fund",
-				"outputs": [],
-				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -94,6 +94,13 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -132,11 +139,11 @@
 			]
 		},
 		"FundMe.sol": {
-			"keccak256": "0x2b6fb9b3cf7e93dfa4bcf642389076287a54d59a70c8a909c7ac9d5515d30623",
+			"keccak256": "0x048f2d583884775401e9949d912745c1bd3bf6269dbf16abdb37ed8b25234d5d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ff7a3af4e67b357bcf73afd336fe349457c0a4073effda5ae990f8f0aae2ac12",
-				"dweb:/ipfs/QmZraFxDDmQ78R9CSWhKF4QQezstHhERF5pMYjMDM4D5jG"
+				"bzz-raw://e59db53a06fde1430f2035f7606e26eda376dcebd3bafbab94856fbd38ba0554",
+				"dweb:/ipfs/QmdLfKWPkZGdZwKzsw1ExvDF6HjrkAo64dTJiUtgXx5caU"
 			]
 		}
 	},
