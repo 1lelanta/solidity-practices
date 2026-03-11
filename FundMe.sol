@@ -5,7 +5,7 @@ import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
 contract FundMe {
 
-    uint256 public minimumUsd = 5e18;
+    uint256 public constant minimumUsd = 5e18; // constant saves  alot of gas 
 
     address[] public funders;
     mapping(address => uint256) public addressToAmountFunded;
